@@ -64,16 +64,16 @@ const requestInstance = <T = any>(config: AxiosRequestConfig): Promise<T> => {
 			const data = res.data;
 			// 如果data.code为错误代码返回message信息
 			if (data.code != 1) {
-				ElMessage({
-					message: data.message,
-					type: "error",
-				});
+				// ElMessage({
+				// 	message: data.message,
+				// 	type: "error",
+				// });
 				reject(data.message);
 			} else {
-				ElMessage({
-					message: data.message,
-					type: "success",
-				});
+				// ElMessage({
+				// 	message: data.message,
+				// 	type: "success",
+				// });
 				// 此处返回data信息 也就是 api 中配置好的 Response类型
 				resolve(data.data as T);
 			}

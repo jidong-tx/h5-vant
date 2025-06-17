@@ -1,7 +1,5 @@
 <template>
-	<div>
-		<h2>settings pages</h2>
-	</div>
+	<div>我是搜索模块</div>
 </template>
 
 <script setup></script>
